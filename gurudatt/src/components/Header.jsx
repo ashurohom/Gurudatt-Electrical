@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import GE2 from "../assets/GE2.png";
+import '../css/App.css';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
