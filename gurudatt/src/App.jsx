@@ -27,11 +27,7 @@ function App() {
         </div>
       </div>
 
-      <div className="relative z-10 flex items-center justify-center h-full">
-        <h1 className="text-white text-4xl md:text-6xl font-bold text-center">
-          Gurudatt Electrical
-        </h1>
-      </div>
+
     </div>
   )
 }
