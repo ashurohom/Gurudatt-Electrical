@@ -1,11 +1,11 @@
 import React from 'react'
-import './app.css'
+import './css/app.css'
 
 function App() {
   return (
     <div>
       <h1 className="text-3xl font-bold underline">
-        Gurudatt Electricals
+        Gurudatt Electricals  
       </h1>
     </div>
   )
