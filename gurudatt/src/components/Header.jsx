@@ -92,58 +92,59 @@ function Header() {
         </button>
       </div>
 
-      {/* Mobile Navbar */}
-      {isOpen && (
-        <nav className="absolute top-full left-0 w-full bg-black bg-opacity-90 sm:hidden">
-            <ul className="flex flex-col items-center space-y-4 py-4 text-white text-xl font-medium font-poppins">
-            <li>
-              <Link
-                to="/"
-                className="hover:text-yellow-400 hover:underline transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/about"
-                className="hover:text-yellow-400 hover:underline transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/product"
-                className="hover:text-yellow-400 hover:underline transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Product
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/services"
-                className="hover:text-yellow-400 hover:underline transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                className="hover:text-yellow-400 hover:underline transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      )}
+    {/* Mobile Navbar */}
+    {isOpen && (
+      <nav className="absolute top-full left-0 w-full bg-black/40 backdrop-blur-md sm:hidden transition-all duration-300">
+        <ul className="flex flex-col items-center space-y-4 py-4 text-white text-xl font-medium font-poppins">
+          <li>
+            <Link
+              to="/"
+              className="hover:text-yellow-400 hover:underline transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className="hover:text-yellow-400 hover:underline transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/product"
+              className="hover:text-yellow-400 hover:underline transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Product
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/services"
+              className="hover:text-yellow-400 hover:underline transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="hover:text-yellow-400 hover:underline transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    )}
+
     </header>
   );
 }
