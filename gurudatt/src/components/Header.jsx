@@ -94,7 +94,7 @@ function Header() {
 
     {/* Mobile Navbar */}
     {isOpen && (
-      <nav className="absolute top-full left-0 w-full bg-black/40 backdrop-blur-md sm:hidden transition-all duration-300">
+      <nav className="absolute top-full left-0 w-full bg-black/3 backdrop-blur-none sm:hidden transition-all duration-300">
         <ul className="flex flex-col items-center space-y-4 py-4 text-white text-xl font-medium font-poppins">
           <li>
             <Link
