@@ -21,11 +21,11 @@ function Header() {
 
       {/* Desktop Navbar centered */}
       <nav className="hidden sm:block absolute left-1/2 transform -translate-x-1/2 z-0">
-        <ul className="flex space-x-8 text-white text-xl sm:text-1xl font-medium font-poppins">
+        <ul className="flex space-x-8 text-white text-xl sm:text-1xl font-kite">
           <li>
             <Link
               to="/"
-              className="hover:text-yellow-400 hover:underline transition-colors"
+              className="relative hover:text-yellow-400 after:content-[''] after:block after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full"
             >
               Home
             </Link>
@@ -33,7 +33,7 @@ function Header() {
           <li>
             <Link
               to="/about"
-              className="hover:text-yellow-400 hover:underline transition-colors"
+              className="relative hover:text-yellow-400 after:content-[''] after:block after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full"
             >
               About
             </Link>
@@ -41,7 +41,7 @@ function Header() {
           <li>
             <Link
               to="/product"
-              className="hover:text-yellow-400 hover:underline transition-colors"
+              className="relative hover:text-yellow-400 after:content-[''] after:block after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full"
             >
               Product
             </Link>
@@ -49,7 +49,7 @@ function Header() {
           <li>
             <Link
               to="/services"
-              className="hover:text-yellow-400 hover:underline transition-colors"
+              className="relative hover:text-yellow-400 after:content-[''] after:block after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full"
             >
               Services
             </Link>
@@ -57,7 +57,7 @@ function Header() {
           <li>
             <Link
               to="/contact"
-              className="hover:text-yellow-400 hover:underline transition-colors"
+              className="relative hover:text-yellow-400 after:content-[''] after:block after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full"
             >
               Contact
             </Link>
@@ -95,7 +95,7 @@ function Header() {
     {/* Mobile Navbar */}
     {isOpen && (
       <nav className="absolute top-full left-0 w-full bg-black/60 backdrop-blur-none sm:hidden transition-all duration-300">
-        <ul className="flex flex-col items-center space-y-4 py-4 text-white text-xl font-medium font-poppins">
+        <ul className="flex flex-col items-center space-y-4 py-4 text-white text-xl font-kite ">
           <li>
             <Link
               to="/"
