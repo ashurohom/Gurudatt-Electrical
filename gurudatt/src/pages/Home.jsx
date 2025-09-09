@@ -12,7 +12,7 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="text-5xl md:text-7xl font-extrabold mb-6 tracking-wider 
-                     text-[#00BFFF] drop-shadow-lg"
+                     text-white drop-shadow-lg"
         >
           Gurudatt Electrical
         </motion.h1>
