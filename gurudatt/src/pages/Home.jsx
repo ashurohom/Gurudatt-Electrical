@@ -11,8 +11,8 @@ function Home() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-7xl font-extrabold mb-6 tracking-wider 
-                     text-white drop-shadow-lg"
+          className="text-5xl md:text-7xl font-extrabold mb-6 tracking-wide 
+                     text-white drop-shadow-xl"
         >
           Gurudatt Electrical
         </motion.h1>
@@ -36,32 +36,32 @@ function Home() {
           transition={{ delay: 1, duration: 1 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <button className="px-8 py-3 bg-yellow-400 text-black font-bold rounded-full shadow-lg hover:bg-yellow-500 hover:scale-105 transition-transform">
+          <button className="px-8 py-3 bg-yellow-400 text-black font-bold rounded-full shadow-lg hover:bg-yellow-500 hover:scale-105 transition-all duration-300">
             Our Products
           </button>
-          <button className="px-8 py-3 border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-black hover:scale-105 transition-transform">
+          <button className="px-8 py-3 border-2 border-yellow-400 rounded-full text-yellow-400 hover:bg-yellow-400 hover:text-black hover:scale-105 transition-all duration-300">
             Contact Us
           </button>
         </motion.div>
 
-        {/* Quick Highlights */}
+        {/* Highlights */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
-          className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-gray-200"
+          className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 text-gray-200"
         >
-          <div className="flex flex-col items-center bg-white/10 p-4 rounded-xl shadow-lg backdrop-blur-sm hover:scale-105 transition">
-            <span className="text-yellow-400 text-3xl">✔️</span>
-            <p className="mt-2 font-medium">1000+ Happy Customers</p>
+          <div className="flex flex-col items-center bg-white/10 p-6 rounded-xl shadow-lg backdrop-blur-md hover:scale-105 transition">
+            <span className="text-yellow-400 text-4xl">✔️</span>
+            <p className="mt-3 font-medium">1000+ Happy Customers</p>
           </div>
-          <div className="flex flex-col items-center bg-white/10 p-4 rounded-xl shadow-lg backdrop-blur-sm hover:scale-105 transition">
-            <span className="text-yellow-400 text-3xl">⚡</span>
-            <p className="mt-2 font-medium">Fast & Reliable Service</p>
+          <div className="flex flex-col items-center bg-white/10 p-6 rounded-xl shadow-lg backdrop-blur-md hover:scale-105 transition">
+            <span className="text-yellow-400 text-4xl">⚡</span>
+            <p className="mt-3 font-medium">Fast & Reliable Service</p>
           </div>
-          <div className="flex flex-col items-center bg-white/10 p-4 rounded-xl shadow-lg backdrop-blur-sm hover:scale-105 transition">
-            <span className="text-yellow-400 text-3xl">🔧</span>
-            <p className="mt-2 font-medium">Expert Electricians</p>
+          <div className="flex flex-col items-center bg-white/10 p-6 rounded-xl shadow-lg backdrop-blur-md hover:scale-105 transition">
+            <span className="text-yellow-400 text-4xl">🔧</span>
+            <p className="mt-3 font-medium">Expert Electricians</p>
           </div>
         </motion.div>
       </div>

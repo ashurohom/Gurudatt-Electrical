@@ -1,39 +1,44 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./css/app.css";
-import bg2 from "./assets/bg2.jpg";
-import Header from "./components/Header";
-
-// Pages
+import Navbar from "./components/Navbar";      // <-- new navbar
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Product from "./pages/Product";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import "./css/app.css";
+import bgImage from "./assets/BG2.jpg";
 
 function App() {
   return (
-    <Router>
-      <div className="h-screen w-full relative">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${bg2})` }}
-        ></div>
-        <div className="absolute inset-0 bg-black opacity-80"></div>
+    <div className="h-screen w-full relative">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      ></div>
 
-        <Header />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black opacity-80"></div>
 
-        <div className="relative z-10 h-full flex items-center justify-center">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
+      {/* App Content */}
+      <div className="relative z-10 min-h-screen">
+        <Router>
+          <Navbar />
+
+          {/* Add padding-top so content doesn’t hide behind Navbar */}
+          <div className="pt-20">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/product" element={<Product />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+        </Router>
       </div>
-    </Router>
+    </div>
   );
 }
 
