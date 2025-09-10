@@ -1,9 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "../css/App.css";
+import slider1 from "../assets/slider1.png";
+import slider2 from "../assets/slider2.png";
+import slider3 from "../assets/slider3.png";
+import slider4 from "../assets/slider4.png";
 
 function Home() {
   return (
-    <div className="relative min-h-screen flex items-center justify-center text-white">
+    <div className="relative min-h-screen flex flex-col items-center justify-center text-white">
       {/* Content */}
       <div className="relative z-10 text-center px-4">
         {/* Shop Name */}
@@ -64,6 +69,34 @@ function Home() {
             <p className="mt-3 font-medium">Expert Electricians</p>
           </div>
         </motion.div>
+
+        {/* Trusted Brands Section */}
+        <div className="mt-20">
+          <h2 className="text-2xl md:text-3xl font-bold text-yellow-400 mb-8">
+            We Sell Trusted Brands
+          </h2>
+
+          {/* Logo Slider */}
+          <div className="overflow-hidden relative w-full max-w-5xl mx-auto">
+            <div className="flex animate-slide">
+              {/* Repeat logos twice for infinite scroll */}
+              {[slider1, slider2, slider3, slider4, slider1, slider2, slider3, slider4].map(
+                (logo, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 w-40 h-24 flex items-center justify-center mx-4 border-2 border-blue-300 rounded-xl bg-white/5 shadow-md"
+                  >
+                    <img
+                      src={logo}
+                      alt={`logo-${index}`}
+                      className="max-h-16 object-contain"
+                    />
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
