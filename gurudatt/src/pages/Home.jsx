@@ -5,6 +5,10 @@ import slider1 from "../assets/slider1.png";
 import slider2 from "../assets/slider2.png";
 import slider3 from "../assets/slider3.png";
 import slider4 from "../assets/slider4.png";
+import slider5 from "../assets/slider5.png";
+import slider6 from "../assets/slider6.png";
+import slider7 from "../assets/slider7.png";
+import slider8 from "../assets/slider8.png";
 
 function Home() {
   return (
@@ -17,8 +21,7 @@ function Home() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6 tracking-wide 
-                       text-white drop-shadow-xl"
+            className="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6 tracking-wide text-white drop-shadow-xl"
           >
             Gurudatt Electrical
           </motion.h1>
@@ -79,24 +82,24 @@ function Home() {
         </div>
       </section>
 
-      {/* 🔹 Trusted Brands Slider (OUTSIDE background) */}
-      <section className="bg-white py-12 sm:py-16">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">
+      {/* 🔹 Trusted Brands Slider (Upside, Full Width, Transparent) */}
+      <section className="w-full -mt-6 sm:-mt-10 lg:-mt-16 bg-transparent">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-100 mb-6">
           We Sell Trusted Brands
         </h2>
 
-        <div className="overflow-hidden relative w-full max-w-6xl mx-auto">
+        <div className="overflow-hidden relative w-full">
           <div className="flex animate-slide">
-            {[slider1, slider2, slider3, slider4, slider1, slider2, slider3, slider4].map(
+            {[slider1, slider2, slider3, slider4, slider5, slider6, slider7, slider8, slider1, slider2, slider3, slider4, slider5, slider6, slider7, slider8, ].map(
               (logo, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-28 sm:w-36 md:w-44 h-28 sm:h-32 md:h-36 flex items-center justify-center mx-4 border border-gray-800 rounded-full bg-gray-100 shadow-md"
+                  className="flex-shrink-0 w-20 sm:w-28 md:w-32 h-20 sm:h-28 md:h-32 flex items-center justify-center mx-4 border border-gray-700 rounded-full bg-white/20 backdrop-blur-sm shadow-lg hover:scale-110 transition-transform duration-300"
                 >
                   <img
                     src={logo}
                     alt={`logo-${index}`}
-                    className="max-h-14 sm:max-h-16 object-contain p-2"
+                    className="max-h-12 sm:max-h-16 object-contain p-2"
                   />
                 </div>
               )
