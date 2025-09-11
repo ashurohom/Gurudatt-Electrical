@@ -14,7 +14,7 @@ function Home() {
   return (
     <div className="relative w-full">
       {/* 🔹 Background Section */}
-<section className="relative min-h-screen flex flex-col items-center justify-center text-white">
+<section className="relative flex flex-col items-center justify-center text-white py-4">
   <div className="relative z-10 text-center px-4">
     {/* Shop Name */}
     <motion.h1
@@ -83,31 +83,16 @@ function Home() {
 </section>
 
 
-      {/* 🔹 Trusted Brands Slider */}
-<section className="w-full py-12 bg-gray-900">
+{/* 🔹 Trusted Brands Slider */}
+<section className="w-full pt-6 pb-12 bg-gray-900">
   <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-yellow-400 mb-8">
     We Sell Trusted Brands
   </h2>
 
   <div className="overflow-hidden relative w-full">
     <div className="flex animate-slide">
-      {[
-        slider1,
-        slider2,
-        slider3,
-        slider4,
-        slider5,
-        slider6,
-        slider7,
-        slider8,
-        slider1,
-        slider2,
-        slider3,
-        slider4,
-        slider5,
-        slider6,
-        slider7,
-        slider8,
+      {[slider1, slider2, slider3, slider4, slider5, slider6, slider7, slider8,
+        slider1, slider2, slider3, slider4, slider5, slider6, slider7, slider8,
       ].map((logo, index) => (
         <div
           key={index}
@@ -124,6 +109,7 @@ function Home() {
     </div>
   </div>
 </section>
+
 
 
       {/* 🔹 Why Choose Us Section (below slider) */}
