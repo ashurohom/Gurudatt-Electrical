@@ -15,8 +15,9 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-black shadow-md">
+    <header className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-sm shadow-md">
       <div className="flex items-center justify-between px-6 py-3">
+        
         {/* Left: Logo */}
         <div className="flex items-center">
           <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-4 border-white shadow-lg overflow-hidden bg-white">
@@ -26,6 +27,11 @@ export default function Navbar() {
               className="w-full h-full object-cover"
             />
           </div>
+        </div>
+
+        {/* Middle: GST Number */}
+        <div className="hidden sm:block text-gray-300 text-sm font-semibold tracking-wide">
+          GSTIN: 27DMLPP8140L1ZD
         </div>
 
         {/* Right: Desktop Links */}
@@ -86,6 +92,11 @@ export default function Navbar() {
       {isOpen && (
         <nav className="sm:hidden bg-black w-full absolute top-full left-0 shadow-lg">
           <ul className="flex flex-col items-center space-y-4 py-6 text-white text-lg font-rounded">
+            {/* Show GST No on top in mobile */}
+            <li className="text-sm text-gray-300 font-semibold">
+              GSTIN: 27DMLPP8140L1ZD
+            </li>
+
             {links.map((link, idx) => (
               <li key={idx}>
                 <Link
