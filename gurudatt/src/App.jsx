@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";      // <-- new navbar
+import Navbar from "./components/Navbar";      
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Product from "./pages/Product";
@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import "./css/app.css";
 import bgImage from "./assets/BG2.jpg";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           </div>
         </Router>
       </div>
+      <Footer />
     </div>
   );
 }
