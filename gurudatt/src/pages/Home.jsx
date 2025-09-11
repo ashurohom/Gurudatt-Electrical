@@ -63,7 +63,7 @@ function Home() {
             <div className="flex flex-col items-center bg-white/10 p-6 rounded-xl shadow-lg backdrop-blur-md hover:scale-105 transition">
               <span className="text-yellow-400 text-3xl sm:text-4xl">✔️</span>
               <p className="mt-3 font-medium text-sm sm:text-base">
-                1000+ Happy Customers
+                5000+ Happy Customers
               </p>
             </div>
             <div className="flex flex-col items-center bg-white/10 p-6 rounded-xl shadow-lg backdrop-blur-md hover:scale-105 transition">
@@ -82,7 +82,7 @@ function Home() {
         </div>
       </section>
 
-      {/* 🔹 Trusted Brands Slider (Upside, Full Width, Transparent) */}
+      {/* 🔹 Trusted Brands Slider */}
       <section className="w-full -mt-6 sm:-mt-10 lg:-mt-16 bg-transparent">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-100 mb-6">
           We Sell Trusted Brands
@@ -90,23 +90,103 @@ function Home() {
 
         <div className="overflow-hidden relative w-full">
           <div className="flex animate-slide">
-            {[slider1, slider2, slider3, slider4, slider5, slider6, slider7, slider8, slider1, slider2, slider3, slider4, slider5, slider6, slider7, slider8, ].map(
-              (logo, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 w-20 sm:w-28 md:w-32 h-20 sm:h-28 md:h-32 flex items-center justify-center mx-4 border border-gray-700 rounded-full bg-white/20 backdrop-blur-sm shadow-lg hover:scale-110 transition-transform duration-300"
-                >
-                  <img
-                    src={logo}
-                    alt={`logo-${index}`}
-                    className="max-h-12 sm:max-h-16 object-contain p-2"
-                  />
-                </div>
-              )
-            )}
+            {[
+              slider1,
+              slider2,
+              slider3,
+              slider4,
+              slider5,
+              slider6,
+              slider7,
+              slider8,
+              slider1,
+              slider2,
+              slider3,
+              slider4,
+              slider5,
+              slider6,
+              slider7,
+              slider8,
+            ].map((logo, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-20 sm:w-28 md:w-32 h-20 sm:h-28 md:h-32 flex items-center justify-center mx-4 border border-gray-700 rounded-full bg-white/20 backdrop-blur-sm shadow-lg hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src={logo}
+                  alt={`logo-${index}`}
+                  className="max-h-12 sm:max-h-16 object-contain p-2"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* 🔹 Why Choose Us Section (below slider) */}
+<section className="py-16 bg-gray-900 text-white text-center">
+  <motion.h2
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    className="text-2xl sm:text-3xl font-bold text-yellow-400 mb-4"
+  >
+    Why Choose Us?
+  </motion.h2>
+
+  {/* Paragraph */}
+  <p className="max-w-3xl mx-auto text-gray-300 mb-12 px-4 text-sm sm:text-base">
+    At Gurudatt Electrical, we provide all kinds of electrical products
+    for homes, offices, and businesses. From complete home fittings to
+    government contracts, our skilled technicians ensure reliable,
+    high-quality service with trusted materials.
+  </p>
+
+  {/* Features Grid with descriptions */}
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
+    {/* Box 1 */}
+    <div className="flex flex-col items-center bg-white/10 p-6 rounded-xl shadow-lg backdrop-blur-md hover:scale-105 transition">
+      <span className="text-yellow-400 text-4xl">🏠</span>
+      <p className="mt-3 font-semibold text-lg text-yellow-300">
+        Complete Home Electrical Fittings
+      </p>
+      <p className="mt-2 text-gray-300 text-sm text-justify">
+        We provide end-to-end electrical solutions for homes including wiring,
+        lighting, and safety systems. Our fittings are durable, safe, and meet
+        all industry standards to give you peace of mind for years.
+      </p>
+    </div>
+
+    {/* Box 2 */}
+    <div className="flex flex-col items-center bg-white/10 p-6 rounded-xl shadow-lg backdrop-blur-md hover:scale-105 transition">
+      <span className="text-yellow-400 text-4xl">👷</span>
+      <p className="mt-3 font-semibold text-lg text-yellow-300">
+        Skilled Technicians for Reliable Service
+      </p>
+      <p className="mt-2 text-gray-300 text-sm text-justify">
+        Our expert electricians bring years of hands-on experience to every
+        project. They ensure professional work, accurate fittings, and
+        trustworthy service so your electrical systems run smoothly without
+        frequent breakdowns or safety issues.
+      </p>
+    </div>
+
+    {/* Box 3 */}
+    <div className="flex flex-col items-center bg-white/10 p-6 rounded-xl shadow-lg backdrop-blur-md hover:scale-105 transition">
+      <span className="text-yellow-400 text-4xl">📜</span>
+      <p className="mt-3 font-semibold text-lg text-yellow-300">
+        Government & Building Contracts Accepted
+      </p>
+      <p className="mt-2 text-gray-300 text-sm text-justify">
+        We specialize in handling electrical contracts for government projects,
+        buildings, and large establishments. From planning to execution, we
+        deliver high-quality services that meet deadlines and maintain full
+        compliance with regulations.
+      </p>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }
