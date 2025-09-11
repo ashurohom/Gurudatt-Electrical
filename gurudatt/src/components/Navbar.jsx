@@ -15,8 +15,8 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50">
-      <div className="flex items-center justify-between px-6 py-3 bg-transparent">
+    <header className="fixed top-0 left-0 w-full z-50 bg-black shadow-md">
+      <div className="flex items-center justify-between px-6 py-3">
         {/* Left: Logo */}
         <div className="flex items-center">
           <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-4 border-white shadow-lg overflow-hidden bg-white">
@@ -84,7 +84,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <nav className="sm:hidden bg-black/90 w-full absolute top-full left-0 shadow-lg">
+        <nav className="sm:hidden bg-black w-full absolute top-full left-0 shadow-lg">
           <ul className="flex flex-col items-center space-y-4 py-6 text-white text-lg font-rounded">
             {links.map((link, idx) => (
               <li key={idx}>
