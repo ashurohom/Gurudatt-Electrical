@@ -83,45 +83,47 @@ function Home() {
       </section>
 
       {/* 🔹 Trusted Brands Slider */}
-      <section className="w-full -mt-6 sm:-mt-10 lg:-mt-16 bg-transparent">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-100 mb-6">
-          We Sell Trusted Brands
-        </h2>
+<section className="w-full py-12 bg-gray-900">
+  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-yellow-400 mb-8">
+    We Sell Trusted Brands
+  </h2>
 
-        <div className="overflow-hidden relative w-full">
-          <div className="flex animate-slide">
-            {[
-              slider1,
-              slider2,
-              slider3,
-              slider4,
-              slider5,
-              slider6,
-              slider7,
-              slider8,
-              slider1,
-              slider2,
-              slider3,
-              slider4,
-              slider5,
-              slider6,
-              slider7,
-              slider8,
-            ].map((logo, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-20 sm:w-28 md:w-32 h-20 sm:h-28 md:h-32 flex items-center justify-center mx-4 border border-gray-700 rounded-full bg-white/20 backdrop-blur-sm shadow-lg hover:scale-110 transition-transform duration-300"
-              >
-                <img
-                  src={logo}
-                  alt={`logo-${index}`}
-                  className="max-h-12 sm:max-h-16 object-contain p-2"
-                />
-              </div>
-            ))}
-          </div>
+  <div className="overflow-hidden relative w-full">
+    <div className="flex animate-slide">
+      {[
+        slider1,
+        slider2,
+        slider3,
+        slider4,
+        slider5,
+        slider6,
+        slider7,
+        slider8,
+        slider1,
+        slider2,
+        slider3,
+        slider4,
+        slider5,
+        slider6,
+        slider7,
+        slider8,
+      ].map((logo, index) => (
+        <div
+          key={index}
+          className="flex-shrink-0 w-20 sm:w-28 md:w-32 h-20 sm:h-28 md:h-32 flex items-center justify-center mx-4 
+          border border-gray-600 rounded-full bg-gray-800 shadow-lg hover:scale-110 transition-transform duration-300"
+        >
+          <img
+            src={logo}
+            alt={`logo-${index}`}
+            className="max-h-12 sm:max-h-16 object-contain p-2"
+          />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* 🔹 Why Choose Us Section (below slider) */}
 <section className="py-16 bg-gray-900 text-white text-center">
