@@ -88,7 +88,7 @@ function Contact() {
             alt="Shop Owner"
             className="w-40 h-40 rounded-full object-cover border-4 border-yellow-400 shadow-lg mb-6"
           />
-          <h2 className="text-2xl font-bold text-yellow-400">Ashutosh Kumar</h2>
+          <h2 className="text-2xl font-bold text-yellow-400">Akshay Parjane</h2>
           <p className="text-gray-400 mt-1">Owner, Gurudatt Electrical</p>
 
           {/* Info Section */}
@@ -96,20 +96,20 @@ function Contact() {
             {/* Phone */}
             <div className="flex items-center space-x-3">
               <span className="text-yellow-400 text-xl">📞</span>
-              <p className="text-gray-300">+91 9876543210</p>
+              <p className="text-gray-300">+91 9545777339</p>
             </div>
 
             {/* Email */}
             <div className="flex items-center space-x-3">
               <span className="text-yellow-400 text-xl">📧</span>
-              <p className="text-gray-300">gurudattelectrical@email.com</p>
+              <p className="text-gray-300">gurudattele55@email.com</p>
             </div>
 
             {/* Address */}
             <div className="flex items-start space-x-3">
               <span className="text-yellow-400 text-xl">📍</span>
               <p className="text-gray-300">
-                Gurudatt Electricals, Main Market Road, Pune, Maharashtra - 411001
+                Gurudatt Electricals, Near Jyoti Patsanstha, Kopargaon, Maharashtra - 423601
               </p>
             </div>
           </div>
