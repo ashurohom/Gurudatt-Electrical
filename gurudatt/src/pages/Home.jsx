@@ -128,6 +128,88 @@ function Home() {
         </div>
       </section>
 
+
+
+
+
+
+
+{/* 🔹 Popular Products Section */}
+<section className="py-16 bg-gray-900 text-white text-center">
+  {/* Headline */}
+  <h2 className="text-2xl sm:text-3xl font-bold text-yellow-400 mb-4">
+    Shop Popular Products
+  </h2>
+
+  {/* Sub-headline */}
+  <p className="max-w-2xl mx-auto text-gray-300 mb-12 px-4 text-sm sm:text-base">
+    Visit our store to see our full range of high-quality electrical products for every need.
+  </p>
+
+  {/* Product Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto px-6">
+    
+    {/* Product Card 1 */}
+    <div className="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform">
+      <img
+        src={w1}
+        alt="Decorative LED Panel Light"
+        className="w-full h-40 object-cover rounded-md mb-4"
+      />
+      <h3 className="text-lg font-semibold text-yellow-300">
+        Decorative LED Panel Light
+      </h3>
+      <p className="text-gray-400 text-sm mt-2">Energy Saving, Long Life</p>
+    </div>
+
+    {/* Product Card 2 */}
+    <div className="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform">
+      <img
+        src={w1}
+        alt="40A MCB Circuit Breaker"
+        className="w-full h-40 object-cover rounded-md mb-4"
+      />
+      <h3 className="text-lg font-semibold text-yellow-300">
+        40A MCB Circuit Breaker
+      </h3>
+      <p className="text-gray-400 text-sm mt-2">Durable Metal Build</p>
+    </div>
+
+    {/* Product Card 3 */}
+    <div className="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform">
+      <img
+        src={w1}
+        alt="5-Gang Modern Switch Plate"
+        className="w-full h-40 object-cover rounded-md mb-4"
+      />
+      <h3 className="text-lg font-semibold text-yellow-300">
+        5-Gang Modern Switch Plate
+      </h3>
+      <p className="text-gray-400 text-sm mt-2">Easy Installation</p>
+    </div>
+
+    {/* Product Card 4 */}
+    <div className="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform">
+      <img
+        src={w1}
+        alt="Premium Ceiling Fan"
+        className="w-full h-40 object-cover rounded-md mb-4"
+      />
+      <h3 className="text-lg font-semibold text-yellow-300">
+        Premium Ceiling Fan
+      </h3>
+      <p className="text-gray-400 text-sm mt-2">Silent & Powerful</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
       {/* 🔹 Why Choose Us Section */}
       <section className="py-16 bg-gray-900 text-white text-center">
         <motion.h2
@@ -228,3 +310,4 @@ function Home() {
 }
 
 export default Home;
+
