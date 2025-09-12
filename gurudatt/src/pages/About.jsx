@@ -19,8 +19,9 @@ export default function About() {
         <img
           src={owner}
           alt="Shop Owner / Shop Banner"
-          className="mt-10 w-full max-w-4xl rounded-2xl shadow-lg"
+          className="mt-10 w-full max-w-4xl h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-lg"
         />
+
       </section>
 
       {/* Our Story Section */}
