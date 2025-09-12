@@ -3,7 +3,7 @@ import ownerImg from "../assets/w1.jpg"; // Replace with actual owner photo
 
 function Contact() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white py-16 px-6 sm:px-10 lg:px-20">
+<div className="min-h-screen bg-gray-900 text-white py-10 px-6 sm:px-10 lg:px-20">
       {/* Page Header */}
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-yellow-400">
