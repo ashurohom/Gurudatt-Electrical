@@ -28,7 +28,7 @@ function App() {
           <Navbar />
 
           {/* Add padding-top so content doesn’t hide behind Navbar */}
-          <div className="relative z-10 pt-24"> 
+          <div className="relative z-10 pt-12"> 
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
