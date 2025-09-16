@@ -62,7 +62,7 @@ function Home() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <button className="px-6 sm:px-8 py-3 bg-yellow-400 text-black font-bold rounded-full shadow-lg hover:bg-yellow-500 hover:scale-105 transition-all duration-300">
-                Our Products
+                Our Services
               </button>
               <button className="px-6 sm:px-8 py-3 border-2 border-yellow-400 rounded-full text-yellow-400 hover:bg-yellow-400 hover:text-black hover:scale-105 transition-all duration-300">
                 Contact Us
