@@ -282,8 +282,8 @@ function Home() {
         </motion.h2>
 
         <p className="max-w-3xl mx-auto text-gray-300 mb-12 px-4 text-sm sm:text-base">
-          A glimpse of our hardworking team delivering reliable electrical
-          services on-site with dedication and skill.
+          A glimpse of our recent electrical projects and on-site work, showcasing
+  the quality and dedication we bring to every task.
         </p>
 
         {/* Image Grid */}
