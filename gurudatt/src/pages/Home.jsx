@@ -278,7 +278,7 @@ function Home() {
           transition={{ duration: 1 }}
           className="text-2xl sm:text-3xl font-bold text-yellow-400 mb-4"
         >
-          Our Workers at Work
+         On-Site Highlights
         </motion.h2>
 
         <p className="max-w-3xl mx-auto text-gray-300 mb-12 px-4 text-sm sm:text-base">
