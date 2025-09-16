@@ -7,8 +7,10 @@ import shop3 from "../assets/w1.jpg";
 export default function About() {
   return (
     <div className="bg-gray-900 text-white">
+
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-gray-800 to-gray-900">
+      <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center 
+      px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-gray-800 to-gray-900 pt-15">
         <h1 className="text-4xl sm:text-5xl font-bold text-brand-primary mb-6">
           About Gurudatt Electrical
         </h1>
@@ -21,8 +23,8 @@ export default function About() {
           alt="Shop Owner / Shop Banner"
           className="mt-10 w-full max-w-4xl h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-lg"
         />
-
       </section>
+
 
       {/* Our Story Section */}
       <section className="py-16 px-6 sm:px-12 lg:px-20 text-center">
