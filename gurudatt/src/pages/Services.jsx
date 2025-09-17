@@ -1,16 +1,16 @@
 // src/pages/Services.jsx
 import React from "react";
 import { FaHome, FaBuilding, FaBolt, FaBoxes } from "react-icons/fa"; 
-import w1 from "../assets/s13.webp";
+import w1 from "../assets/s88.jpg";
 import w2 from "../assets/s7.jpg";
 import w3 from "../assets/s3.jpg";
-import w4 from "../assets/w1.jpg";
+import w4 from "../assets/led.jpg";
 
 const Services = () => {
   const services = [
     {
       id: 1,
-      title: "Home Fetting",
+      title: "Home Fitting",
       description:
         "We provide expert electrical solutions for homes including wiring, lighting installation, maintenance, and safety checks. Our experienced technicians ensure reliable service with top-quality materials.",
       icon: <FaHome className="text-yellow-400 text-5xl" />,
@@ -18,7 +18,7 @@ const Services = () => {
     },
     {
       id: 2,
-      title: "Building Fetting",
+      title: "Building Fitting",
       description:
         "Professional electrical fitting and wiring services for commercial buildings, offices, and apartments. We ensure long-lasting, efficient, and safe setups with modern electrical standards.",
       icon: <FaBuilding className="text-blue-400 text-5xl" />,

@@ -18,12 +18,14 @@ import p2 from "../assets/plate.webp";
 import p3 from "../assets/MCB.jpg";
 import p4 from "../assets/fan.webp";
 
-import s8 from "../assets/s8.jpg";
-import s10 from "../assets/s10.jpg";
-import s5 from "../assets/s5.jpg";
-import s7 from "../assets/s7.jpg";
 import s1 from "../assets/s1.jpg";
 import s3 from "../assets/s3.jpg";
+import s5 from "../assets/s5.jpg";
+import s7 from "../assets/s7.jpg";
+import s8 from "../assets/s8.jpg";
+import s10 from "../assets/s10.jpg";
+
+
 
 
 function Home() {
@@ -110,6 +112,33 @@ function Home() {
           </div>
         </section>
 
+
+                {/* 🔹 Call-to-Action Section */}
+        <section className="py-12 bg-yellow-400 text-black text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+            💡 Looking for professional electrical solutions?
+          </h2>
+          <p className="text-lg sm:text-xl mb-6">
+            Call us today and get expert service at your doorstep!
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="tel:+919876543210"
+              className="px-6 py-3 bg-black text-yellow-400 font-bold rounded-full shadow-lg hover:scale-105 transition-transform"
+            >
+              📞 Call Now
+            </a>
+            <a
+              href="https://wa.me/919876543210"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 border-2 border-black text-black font-bold rounded-full hover:bg-black hover:text-yellow-400 transition"
+            >
+              💬 WhatsApp Us
+            </a>
+          </div>
+        </section>
+
         {/* 🔹 Trusted Brands Slider */}
         <section className="w-full pt-6 pb-12 bg-gray-900">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-yellow-400 mb-8">
@@ -186,6 +215,13 @@ function Home() {
             ))}
           </div>
         </section>
+
+
+
+
+
+
+
 
         {/* 🔹 Why Choose Us Section */}
         <section className="py-16 bg-gray-900 text-white text-center">

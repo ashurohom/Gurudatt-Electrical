@@ -1,5 +1,5 @@
 import React from "react";
-import ownerImg from "../assets/w1.jpg"; // Replace with actual owner photo
+import ownerImg from "../assets/Akshay.png"; 
 
 function Contact() {
   return (
