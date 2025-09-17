@@ -12,10 +12,14 @@ import slider8 from "../assets/slider8.png";
 
 import w1 from "../assets/w1.jpg";
 import bgImage from "../assets/BG2.jpg"; 
+
 import p1 from "../assets/led.jpg";
 import p2 from "../assets/plate.webp";
 import p3 from "../assets/MCB.jpg";
 import p4 from "../assets/fan.webp";
+
+import s8 from "../assets/s8.jpg";
+import s10 from "../assets/s10.jpg";
 
 
 function Home() {
@@ -249,7 +253,7 @@ function Home() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
-            {[w1, w1, w1, w1, w1, w1].map((img, idx) => (
+            {[s8, s10, w1, w1, w1, w1].map((img, idx) => (
               <div
                 key={idx}
                 className="relative overflow-hidden rounded-xl shadow-lg group"
