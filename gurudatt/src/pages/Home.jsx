@@ -10,9 +10,13 @@ import slider6 from "../assets/slider6.png";
 import slider7 from "../assets/slider7.png";
 import slider8 from "../assets/slider8.png";
 
-// Worker Images
 import w1 from "../assets/w1.jpg";
-import bgImage from "../assets/BG2.jpg"; // ✅ import background only here
+import bgImage from "../assets/BG2.jpg"; 
+import p1 from "../assets/led.jpg";
+import p2 from "../assets/plate.webp";
+import p3 from "../assets/MCB.jpg";
+import p4 from "../assets/fan.webp";
+
 
 function Home() {
   return (
@@ -151,18 +155,18 @@ function Home() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto px-6">
-            {[ 
-              { name: "Decorative LED Panel Light", spec: "Energy Saving, Long Life" },
-              { name: "40A MCB Circuit Breaker", spec: "Durable Metal Build" },
-              { name: "5-Gang Modern Switch Plate", spec: "Easy Installation" },
-              { name: "Premium Ceiling Fan", spec: "Silent & Powerful" }
+            {[
+              { img: p1, name: "Decorative LED Panel Light", spec: "Energy Saving, Long Life" },
+              { img: p3, name: "40A MCB Circuit Breaker", spec: "Durable Metal Build" },
+              { img: p2, name: "5-Gang Modern Switch Plate", spec: "Easy Installation" },
+              { img: p4, name: "Premium Ceiling Fan", spec: "Silent & Powerful" },
             ].map((product, idx) => (
               <div
                 key={idx}
                 className="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform"
               >
                 <img
-                  src={w1}
+                  src={product.img}
                   alt={product.name}
                   className="w-full h-40 object-cover rounded-md mb-4"
                 />
