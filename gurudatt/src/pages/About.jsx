@@ -1,8 +1,9 @@
 import React from "react";
 import owner from "../assets/s4.jpg"; // temporary owner/shop image
 import shop1 from "../assets/s6.jpg";
-import shop2 from "../assets/w1.jpg";
-import shop3 from "../assets/w1.jpg";
+import shop2 from "../assets/s11.png";
+import shop3 from "../assets/s12.png";
+
 
 export default function About() {
   return (

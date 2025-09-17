@@ -1,9 +1,9 @@
 // src/pages/Services.jsx
 import React from "react";
 import { FaHome, FaBuilding, FaBolt, FaBoxes } from "react-icons/fa"; 
-import w1 from "../assets/w1.jpg";
-import w2 from "../assets/w1.jpg";
-import w3 from "../assets/w1.jpg";
+import w1 from "../assets/s13.webp";
+import w2 from "../assets/s7.jpg";
+import w3 from "../assets/s3.jpg";
 import w4 from "../assets/w1.jpg";
 
 const Services = () => {
