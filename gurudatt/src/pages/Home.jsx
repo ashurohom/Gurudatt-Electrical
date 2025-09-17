@@ -113,31 +113,36 @@ function Home() {
         </section>
 
 
-                {/* 🔹 Call-to-Action Section */}
-        <section className="py-12 bg-yellow-400 text-black text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-            💡 Looking for professional electrical solutions?
-          </h2>
-          <p className="text-lg sm:text-xl mb-6">
-            Call us today and get expert service at your doorstep!
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="tel:+919876543210"
-              className="px-6 py-3 bg-black text-yellow-400 font-bold rounded-full shadow-lg hover:scale-105 transition-transform"
-            >
-              📞 Call Now
-            </a>
-            <a
-              href="https://wa.me/919876543210"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 border-2 border-black text-black font-bold rounded-full hover:bg-black hover:text-yellow-400 transition"
-            >
-              💬 WhatsApp Us
-            </a>
-          </div>
-        </section>
+      {/* 🔹 Call-to-Action Section */}
+<section className="py-16 bg-white-800 text-center px-4">
+  <div className="max-w-3xl mx-auto ">
+    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-yellow-400 mb-4">
+       Looking for professional electrical solutions?
+    </h2>
+    <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-6">
+      Call us today and get expert service at your doorstep!
+    </p>
+
+    <div className="flex flex-col sm:flex-row justify-center gap-3">
+      <a
+        href="tel:+919876543210"
+        className="w-full sm:w-auto px-6 py-3 bg-yellow-400 text-black font-bold rounded-lg shadow-md hover:scale-105 transition-transform text-center"
+      >
+        📞 Call Now
+      </a>
+      <a
+        href="https://wa.me/919876543210"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full sm:w-auto px-6 py-3 border-2 border-yellow-400 text-yellow-400 font-bold rounded-lg hover:bg-yellow-400 hover:text-black transition text-center"
+      >
+        💬 WhatsApp Us
+      </a>
+    </div>
+  </div>
+</section>
+
+
 
         {/* 🔹 Trusted Brands Slider */}
         <section className="w-full pt-6 pb-12 bg-gray-900">
