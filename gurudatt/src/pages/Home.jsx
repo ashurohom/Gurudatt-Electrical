@@ -20,6 +20,10 @@ import p4 from "../assets/fan.webp";
 
 import s8 from "../assets/s8.jpg";
 import s10 from "../assets/s10.jpg";
+import s5 from "../assets/s5.jpg";
+import s7 from "../assets/s7.jpg";
+import s1 from "../assets/s1.jpg";
+import s3 from "../assets/s3.jpg";
 
 
 function Home() {
@@ -253,7 +257,7 @@ function Home() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
-            {[s8, s10, w1, w1, w1, w1].map((img, idx) => (
+            {[s8, s10, s5, s7, s1, s3].map((img, idx) => (
               <div
                 key={idx}
                 className="relative overflow-hidden rounded-xl shadow-lg group"
