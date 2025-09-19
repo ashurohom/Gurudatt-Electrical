@@ -72,9 +72,11 @@ const Services = () => {
     <div className="bg-gray-900 text-white min-h-screen py-12 px-6">
       {/* 🔹 Hero Section */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-yellow-400 drop-shadow-lg">
-          ⚡ Powering Homes, Buildings & Projects Since 2020 ⚡
-        </h1>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-yellow-400 drop-shadow-lg">
+        Our Services
+      </h1>
+
+
         <p className="text-gray-300 max-w-2xl mx-auto text-lg">
           Gurudatt Electrical provides professional, reliable, and affordable electrical services
           to homes, buildings, government projects, and as a trusted material supplier.
@@ -137,9 +139,11 @@ const Services = () => {
         <p className="text-gray-300 mb-6">
           Contact Gurudatt Electrical today for reliable, affordable, and high-quality services.
         </p>
+        <a
+        href="tel:+919545777339">
         <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg font-semibold shadow-md">
           📞 Get in Touch
-        </button>
+        </button></a>
       </div>
     </div>
   );
