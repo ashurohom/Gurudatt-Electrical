@@ -1,9 +1,8 @@
-// src/pages/Services.jsx
 import React from "react";
-import { FaHome, FaBuilding, FaBolt, FaBoxes } from "react-icons/fa"; 
+import { FaHome, FaBuilding, FaBolt, FaBoxes, FaClipboardCheck, FaTools, FaComments, FaCheckCircle } from "react-icons/fa"; 
 import w1 from "../assets/s88.jpg";
 import w2 from "../assets/s10.jpg";
-import w3 from "../assets/s3.jpg";
+import w3 from "../assets/s33.jpg";
 import w4 from "../assets/led.jpg";
 
 const Services = () => {
@@ -42,19 +41,47 @@ const Services = () => {
     },
   ];
 
+  const process = [
+    {
+      id: 1,
+      title: "Consultation",
+      description: "We listen to your needs, visit your site if required, and provide expert advice.",
+      icon: <FaComments className="text-yellow-400 text-4xl" />,
+    },
+    {
+      id: 2,
+      title: "Planning & Quotation",
+      description: "We create a clear plan, give you a transparent quotation, and timeline.",
+      icon: <FaClipboardCheck className="text-blue-400 text-4xl" />,
+    },
+    {
+      id: 3,
+      title: "Installation / Service",
+      description: "Our skilled technicians perform high-quality installation or service.",
+      icon: <FaTools className="text-green-400 text-4xl" />,
+    },
+    {
+      id: 4,
+      title: "Quality Check & Support",
+      description: "We ensure safety, test everything, and provide ongoing support if needed.",
+      icon: <FaCheckCircle className="text-purple-400 text-4xl" />,
+    },
+  ];
+
   return (
     <div className="bg-gray-900 text-white min-h-screen py-12 px-6">
-      {/* Header */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">⚡ Our Services ⚡</h1>
-        <p className="text-gray-300 max-w-2xl mx-auto">
-          Gurudatt Electrical provides professional, reliable, and affordable
-          electrical services to homes, buildings, government projects, and as a
-          trusted material supplier.
+      {/* 🔹 Hero Section */}
+      <div className="text-center mb-16">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-yellow-400 drop-shadow-lg">
+          ⚡ Powering Homes, Buildings & Projects Since 2020 ⚡
+        </h1>
+        <p className="text-gray-300 max-w-2xl mx-auto text-lg">
+          Gurudatt Electrical provides professional, reliable, and affordable electrical services
+          to homes, buildings, government projects, and as a trusted material supplier.
         </p>
       </div>
 
-      {/* Services Grid */}
+      {/* 🔹 Services Grid */}
       <div className="grid md:grid-cols-2 gap-12">
         {services.map((service) => (
           <div
@@ -80,16 +107,37 @@ const Services = () => {
         ))}
       </div>
 
-      {/* Call to Action */}
-      <div className="mt-16 text-center">
+      {/* 🔹 Process Section */}
+      <div className="mt-20 text-center">
+        <h2 className="text-3xl font-bold mb-4">🛠️ How We Work</h2>
+        <p className="text-gray-300 mb-12 max-w-2xl mx-auto">
+          Our simple 4-step process ensures smooth service, clear communication, and
+          top-quality results every time.
+        </p>
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {process.map((step) => (
+            <div
+              key={step.id}
+              className="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
+            >
+              <div className="mb-4 flex justify-center">{step.icon}</div>
+              <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+              <p className="text-gray-400 text-sm">{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 🔹 Call to Action */}
+      <div className="mt-20 text-center">
         <h2 className="text-3xl font-bold mb-4">
           Need Professional Electrical Services?
         </h2>
         <p className="text-gray-300 mb-6">
-          Contact Gurudatt Electrical today for reliable, affordable, and
-          high-quality services.
+          Contact Gurudatt Electrical today for reliable, affordable, and high-quality services.
         </p>
-        <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg font-semibold">
+        <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg font-semibold shadow-md">
           📞 Get in Touch
         </button>
       </div>
