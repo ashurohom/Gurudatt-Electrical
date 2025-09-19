@@ -2,7 +2,7 @@
 import React from "react";
 import { FaHome, FaBuilding, FaBolt, FaBoxes } from "react-icons/fa"; 
 import w1 from "../assets/s88.jpg";
-import w2 from "../assets/s7.jpg";
+import w2 from "../assets/s10.jpg";
 import w3 from "../assets/s3.jpg";
 import w4 from "../assets/led.jpg";
 

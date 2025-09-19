@@ -48,13 +48,15 @@ function Home() {
           <div className="relative z-10 text-center px-4">
             {/* Shop Name */}
             <motion.h1
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6 tracking-wide drop-shadow-xl"
-            >
-              Gurudatt Electrical
-            </motion.h1>
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-6 tracking-wide drop-shadow-xl text-white"
+          >
+            Gurudatt Electrical
+          </motion.h1>
+
+
 
             {/* Tagline */}
             <motion.p
