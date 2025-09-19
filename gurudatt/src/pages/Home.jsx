@@ -125,7 +125,7 @@ function Home() {
 
     <div className="flex flex-col sm:flex-row justify-center gap-3">
       <a
-        href="tel:+919876543210"
+        href="tel:+919545777339"
         className="w-full sm:w-auto px-6 py-3 bg-yellow-400 text-black font-bold rounded-lg shadow-md hover:scale-105 transition-transform text-center"
       >
         📞 Call Now
