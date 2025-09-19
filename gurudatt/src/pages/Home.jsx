@@ -131,7 +131,7 @@ function Home() {
         📞 Call Now
       </a>
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/919545777339"
         target="_blank"
         rel="noopener noreferrer"
         className="w-full sm:w-auto px-6 py-3 border-2 border-yellow-400 text-yellow-400 font-bold rounded-lg hover:bg-yellow-400 hover:text-black transition text-center"
