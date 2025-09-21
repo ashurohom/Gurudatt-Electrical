@@ -74,10 +74,19 @@ function Footer() {
 
       {/* Bottom Note */}
       <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
-  <p>
-    © {new Date().getFullYear()} Gurudatt Electrical. All Rights Reserved By{" "}
-    <span className="text-white-400">Ashitosh Rohom</span>.
-  </p>
+<p>
+  © {new Date().getFullYear()} Gurudatt Electrical. All Rights Reserved. Developed by {" "}
+  <a
+    href="https://www.linkedin.com/in/ashitoshrohom"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-400 underline hover:text-yellow-400 transition"
+  >
+    Ashitosh Rohom
+  </a>.
+</p>
+
+
   <p className="mt-2 text-gray-300">
     GST No : <span className="font-semibold text-yellow-400">27DMLPP8140L1ZD</span>
   </p>
