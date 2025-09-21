@@ -109,7 +109,7 @@ function Contact() {
             <div className="flex items-start space-x-3">
               <span className="text-yellow-400 text-xl">📍</span>
               <p className="text-gray-300">
-                Gurudatt Electricals, Near Jyoti Patsanstha, Kopargaon, Maharashtra - 423601
+                Gurudatt Electricals, <br />Near Jyoti Patsanstha, <br /> Opp. Annabhau Sathe Putala, <br />Kopargaon, Maharashtra - 423601
               </p>
             </div>
           </div>

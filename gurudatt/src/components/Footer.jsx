@@ -12,6 +12,7 @@ function Footer() {
           <p className="text-sm leading-relaxed">
             Gurudatt Electrical, <br />
             Near Jyoti Patsanstha, <br />
+            Opp. Annabhau Sathe Putala, <br /> 
             Kopargaon (423 601), <br />
             Maharashtra
           </p>
