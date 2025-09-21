@@ -61,7 +61,7 @@ function Footer() {
           <div className="flex items-center gap-2">
             <Facebook size={18} className="text-blue-500" />
             <a
-              href="https://facebook.com/akshayparjanepatil"
+              href="https://www.facebook.com/akshay.parjane.1"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
