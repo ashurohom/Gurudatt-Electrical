@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 import Navbar from "./components/Navbar";      
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -25,11 +26,13 @@ function App() {
       {/* App Content */}
       <div className="relative z-10 min-h-screen">
         <Router>
+          <ScrollToTop />
           <Navbar />
 
           {/* Add padding-top so content doesn’t hide behind Navbar */}
           <div className="relative z-10 pt-12"> 
             <Routes>
+              
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/product" element={<Product />} />
