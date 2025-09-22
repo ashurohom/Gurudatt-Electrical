@@ -1,9 +1,35 @@
-import React from "react";
-import ownerImg from "../assets/Akshay.png"; 
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import ownerImg from "../assets/Akshay.png";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_btx2r4f",    // 🔹 replace with EmailJS Service ID
+        "template_gscm6zr",   // 🔹 replace with EmailJS Template ID
+        form.current,
+        "TlFtHXC6tHXqtMJK9"     // 🔹 replace with EmailJS Public Key
+      )
+      .then(
+        (result) => {
+          alert("✅ Message sent successfully!");
+          console.log(result.text);
+          form.current.reset(); // clear form
+        },
+        (error) => {
+          alert("❌ Failed to send message. Please try again.");
+          console.error(error.text);
+        }
+      );
+  };
+
   return (
-<div className="min-h-screen bg-gray-900 text-white py-10 px-6 sm:px-10 lg:px-20">
+    <div className="min-h-screen bg-gray-900 text-white py-10 px-6 sm:px-10 lg:px-20">
       {/* Page Header */}
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-yellow-400">
@@ -22,7 +48,7 @@ function Contact() {
           <h2 className="text-2xl font-bold text-yellow-400 mb-6">
             Contact Form
           </h2>
-          <form className="space-y-6">
+          <form ref={form} onSubmit={sendEmail} className="space-y-6">
             {/* Name */}
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-2">
@@ -30,7 +56,9 @@ function Contact() {
               </label>
               <input
                 type="text"
+                name="user_name" // 🔹 must match template variable
                 placeholder="Enter your name"
+                required
                 className="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:ring-2 focus:ring-yellow-400 focus:outline-none"
               />
             </div>
@@ -42,7 +70,9 @@ function Contact() {
               </label>
               <input
                 type="email"
+                name="user_email" // 🔹 must match template variable
                 placeholder="Enter your email"
+                required
                 className="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:ring-2 focus:ring-yellow-400 focus:outline-none"
               />
             </div>
@@ -54,7 +84,9 @@ function Contact() {
               </label>
               <input
                 type="tel"
+                name="user_phone" // 🔹 must match template variable
                 placeholder="Enter your phone number"
+                required
                 className="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:ring-2 focus:ring-yellow-400 focus:outline-none"
               />
             </div>
@@ -65,8 +97,10 @@ function Contact() {
                 Message
               </label>
               <textarea
+                name="message" // 🔹 must match template variable
                 rows="4"
                 placeholder="Write your message..."
+                required
                 className="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:ring-2 focus:ring-yellow-400 focus:outline-none"
               ></textarea>
             </div>
@@ -93,28 +127,27 @@ function Contact() {
 
           {/* Info Section */}
           <div className="mt-6 space-y-4 w-full text-left">
-            {/* Phone */}
             <div className="flex items-center space-x-3">
               <span className="text-yellow-400 text-xl">📞</span>
               <p className="text-gray-300">+91 9545777339</p>
             </div>
 
-            {/* Email */}
             <div className="flex items-center space-x-3">
               <span className="text-yellow-400 text-xl">📧</span>
               <p className="text-gray-300">gurudattele55@email.com</p>
             </div>
 
-            {/* Address */}
             <div className="flex items-start space-x-3">
               <span className="text-yellow-400 text-xl">📍</span>
               <p className="text-gray-300">
-                Gurudatt Electricals, <br />Near Jyoti Patsanstha, <br /> Opp. Annabhau Sathe Putala, <br />Kopargaon, Maharashtra - 423601
+                Gurudatt Electricals, <br />
+                Near Jyoti Patsanstha, <br />
+                Opp. Annabhau Sathe Putala, <br />
+                Kopargaon, Maharashtra - 423601
               </p>
             </div>
           </div>
 
-          {/* Optional: Social Media Links */}
           <div className="flex space-x-6 mt-8">
             <a href="#" className="text-gray-300 hover:text-yellow-400 text-xl">
               🌐
