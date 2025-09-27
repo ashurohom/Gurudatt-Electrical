@@ -26,7 +26,7 @@ The website is designed to be:
 |-------------|----------|
 | **HTML5** | Structure of the website |
 | **CSS3** | Styling and layout |
-| **JavaScript (Vanilla JS)** | Interactivity and animations |
+| **JavaScript** | Interactivity and animations |
 | **Netlify** | Hosting and continuous deployment |
 | **GitHub** | Version control and repository management |
 
@@ -56,20 +56,11 @@ The website is hosted on **Netlify** with automatic deployment from the GitHub r
 
 ---
 
-## 🔗 Links
-
-- 🌐 **Live Website:** [https://gurudattelectrical.netlify.app/](https://gurudattelectrical.netlify.app/)
-- 💻 **GitHub Repository:** _[Add your repo link here]_  
-
-
-
----
-
 ## 🧑‍💻 Author
 
 **Developed by:** [Ashitosh Rohom](https://github.com/ashurohom)  
-📧 **Email:** _[Add your contact email if you want]_  
-💼 Passionate Frontend Developer | Learning React, Django & Odoo  
+📧 **Email:** _[ashitosh.rohom@gmail.com]_  
+💼 Passionate Fullstack Developer | Learning React, Django & Odoo  
 
 ---
 
@@ -85,7 +76,7 @@ If you found this project helpful, please consider **starring the repository** �
 
 ---
 
-🛠️ _Built with HTML, CSS, JavaScript and deployed via Netlify._
+
 
 
 
