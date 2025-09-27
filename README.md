@@ -43,5 +43,51 @@ The website is hosted on **Netlify** with automatic deployment from the GitHub r
 
 ---
 
-## 📁 Project Structure
+
+---
+
+## 🧠 Features
+
+- 🏠 **Homepage** introducing Gurudatt Electrical  
+- 🧰 **Services page** detailing offerings  
+- 📞 **Contact page** with contact form and location map  
+- 📱 Fully **responsive** across devices  
+- 🌙 **Simple and elegant** design  
+
+---
+
+## 🔗 Links
+
+- 🌐 **Live Website:** [https://gurudattelectrical.netlify.app/](https://gurudattelectrical.netlify.app/)
+- 💻 **GitHub Repository:** _[Add your repo link here]_  
+
+
+
+---
+
+## 🧑‍💻 Author
+
+**Developed by:** [Ashitosh Rohom](https://github.com/ashurohom)  
+📧 **Email:** _[Add your contact email if you want]_  
+💼 Passionate Frontend Developer | Learning React, Django & Odoo  
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — feel free to use, modify, and distribute it.
+
+---
+
+### ⭐ Show Some Love
+
+If you found this project helpful, please consider **starring the repository** ⭐ on GitHub — it helps more people discover it!
+
+---
+
+🛠️ _Built with HTML, CSS, JavaScript and deployed via Netlify._
+
+
+
+
 
