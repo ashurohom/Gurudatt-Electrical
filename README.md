@@ -1,4 +1,4 @@
-# ⚡ Gurudatt Electrical — Official Website
+# ⚡ Gurudatt Electrical — Website
 
 Welcome to the **Gurudatt Electrical** official website repository.  
 This is a modern, responsive, and SEO-friendly **static website** built to showcase Gurudatt Electrical’s products, services, and contact details online.
